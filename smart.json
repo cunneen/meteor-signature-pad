@@ -1,9 +1,0 @@
-{
-  "name": "signaturepad",
-  "description": "Wrapper for signature pad ",
-  "homepage": "",
-  "author": "Mike Cunneen <mike@cunneen.biz> (http://github.com/cunneen)",
-  "version": "0.0.1",
-  "git": "",
-  "packages": {}
-}
