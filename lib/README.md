@@ -34,6 +34,12 @@ signaturePad.clear();
 
 // Returns true if canvas is empty, otherwise returns false
 signaturePad.isEmpty();
+
+// Unbinds all event handlers
+signaturePad.off();
+
+// Rebinds all event handlers
+signaturePad.on();
 ```
 
 ### Options
@@ -98,8 +104,8 @@ File.open("signature.png", "wb") { |f| f.write(decoded_image) }
 ```
 
 And an example in PHP:
-``` php
 
+``` php
 $data_uri = "data:image/png;base64,iVBORw0K..."
 $data_pieces = explode(",", $data_uri);
 $encoded_image = $data_pieces[1];
@@ -108,6 +114,21 @@ file_put_contents( "signature.png",$decoded_image);
 ```
 
 ## Changelog
+### 1.5.1
+* Prevent duplicate events on tap in iOS Safari. [PerfectPixel](https://github.com/PerfectPixel)
+
+### 1.5.0
+* Add `on` method that rebinds all event handlers. [Alplob](https://github.com/Alplob)
+
+### 1.4.0
+* Add `off` method that unbinds all event handlers. [Rob-ot](https://github.com/Rob-ot)
+
+### 1.3.6
+* Fix support for Browserify. [chevett](https://github.com/chevett)
+
+### 1.3.5
+* Add support for CommonJS/AMD/UMD.
+
 ### 1.3.4
 * Really fix `fromDataURL` on HiDPI screens.
 
