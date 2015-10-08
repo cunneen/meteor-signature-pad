@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Wrapper for signature-pad https://github.com/szimek/signature_pad",
-    version: '1.5.1',
+    version: '1.5.2',
     name: "cunneen:signature-pad",
     githubUrl: 'https://github.com/cunneen/meteor-signature-pad/'
 });
